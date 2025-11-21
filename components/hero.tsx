@@ -23,7 +23,7 @@ export default function Hero() {
         </h1>
 
         {/* Subheading */}
-        <p className="text-lg sm:text-xl text-ivory-text mb-8 font-light">
+        <p className="text-lg sm:text-xl text-ivory-text/90 mb-8 font-light">
           By Ronda Wallace – Premium Studio Suites for Beauty Professionals
         </p>
 
