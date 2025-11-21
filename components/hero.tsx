@@ -15,56 +15,58 @@ export default function Hero() {
       <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-gold-primary/10 blur-3xl"></div>
       <div className="absolute bottom-20 right-10 w-40 h-40 rounded-full bg-gold-primary/10 blur-3xl"></div>
 
-      {/* Content aligned to the left */}
+      {/* Content aligned to the left with frosted glass container */}
       <div className="relative z-10 text-left px-4 sm:px-6 lg:px-12 max-w-2xl">
-        {/* Main Heading */}
-        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-ivory-text mb-6 tracking-tight">
-          SBR STUDIO SUITES
-        </h1>
+        <div className="backdrop-blur-md bg-white/15 border border-white/30 rounded-3xl p-8 sm:p-12 shadow-2xl">
+          {/* Main Heading */}
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight drop-shadow-lg">
+            SBR STUDIO SUITES
+          </h1>
 
-        {/* Subheading */}
-        <p className="text-lg sm:text-xl text-ivory-text/90 mb-8 font-light">
-          By Ronda Wallace – Premium Studio Suites for Beauty Professionals
-        </p>
+          {/* Subheading */}
+          <p className="text-lg sm:text-xl text-white/95 mb-8 font-light drop-shadow-md">
+            By Ronda Wallace – Premium Studio Suites for Beauty Professionals
+          </p>
 
-        <div className="mb-12 space-y-3">
-          <p className="text-sm sm:text-base text-gold-primary font-semibold tracking-widest animate-pulse">
-            ✦ Several Suites Ready Now
-          </p>
-          <p
-            className="text-sm sm:text-base text-gold-light font-semibold tracking-widest animate-pulse"
-            style={{ animationDelay: "0.5s" }}
-          >
-            ✦ Brand & Marketing Help Included
-          </p>
-          <p
-            className="text-sm sm:text-base text-gold-primary font-semibold tracking-widest animate-pulse"
-            style={{ animationDelay: "1s" }}
-          >
-            ✦ Elevate Your Beauty Business Today
-          </p>
-        </div>
+          <div className="mb-12 space-y-3">
+            <p className="text-sm sm:text-base text-white font-semibold tracking-widest animate-pulse drop-shadow-md">
+              ✦ Several Suites Ready Now
+            </p>
+            <p
+              className="text-sm sm:text-base text-white font-semibold tracking-widest animate-pulse drop-shadow-md"
+              style={{ animationDelay: "0.5s" }}
+            >
+              ✦ Brand & Marketing Help Included
+            </p>
+            <p
+              className="text-sm sm:text-base text-white font-semibold tracking-widest animate-pulse drop-shadow-md"
+              style={{ animationDelay: "1s" }}
+            >
+              ✦ Elevate Your Beauty Business Today
+            </p>
+          </div>
 
-        {/* Dual CTAs */}
-        <div className="flex flex-col sm:flex-row gap-4">
-          <button
-            onClick={() => {
-              const element = document.getElementById("suites")
-              element?.scrollIntoView({ behavior: "smooth" })
-            }}
-            className="luxury-button px-8 py-4 rounded-full text-sm sm:text-base transform hover:scale-105 transition-transform duration-300"
-          >
-            View Available Suites
-          </button>
-          <button
-            onClick={() => {
-              const element = document.getElementById("inquire")
-              element?.scrollIntoView({ behavior: "smooth" })
-            }}
-            className="luxury-button-secondary px-8 py-4 rounded-full text-sm sm:text-base transform hover:scale-105 transition-transform duration-300"
-          >
-            Inquire Today
-          </button>
+          {/* Dual CTAs */}
+          <div className="flex flex-col sm:flex-row gap-4">
+            <button
+              onClick={() => {
+                const element = document.getElementById("suites")
+                element?.scrollIntoView({ behavior: "smooth" })
+              }}
+              className="luxury-button px-8 py-4 rounded-full text-sm sm:text-base transform hover:scale-105 transition-transform duration-300"
+            >
+              View Available Suites
+            </button>
+            <button
+              onClick={() => {
+                const element = document.getElementById("inquire")
+                element?.scrollIntoView({ behavior: "smooth" })
+              }}
+              className="luxury-button-secondary px-8 py-4 rounded-full text-sm sm:text-base transform hover:scale-105 transition-transform duration-300"
+            >
+              Inquire Today
+            </button>
+          </div>
         </div>
       </div>
     </section>
