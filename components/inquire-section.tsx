@@ -143,7 +143,7 @@ export default function InquireSection() {
 
                 <button
                   type="submit"
-                  className="w-full py-3 bg-gold-primary text-black-dark font-bold rounded-lg hover:bg-gold-light hover:shadow-2xl hover:shadow-gold-primary/50 transition-all duration-300 mt-6 transform hover:scale-105"
+                  className="luxury-button w-full py-3 rounded-lg transition-all duration-300 mt-6 transform hover:scale-105"
                 >
                   Submit Inquiry
                 </button>

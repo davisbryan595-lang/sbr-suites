@@ -32,25 +32,25 @@ export default function SuiteCard({ suite }: SuiteCardProps) {
         </div>
 
         {/* Content */}
-        <div className="p-8">
+        <div className="p-8 bg-gradient-to-br from-white to-cream-light">
           {/* Title */}
-          <h3 className="text-2xl font-bold text-black-dark mb-2">{suite.title}</h3>
+          <h3 className="text-2xl font-bold text-dark-bg mb-2">{suite.title}</h3>
 
           {/* Description */}
-          <p className="text-black-dark/70 text-sm mb-6">{suite.description}</p>
+          <p className="text-dark-bg/85 text-sm mb-6 font-medium">{suite.description}</p>
 
           {/* Features */}
           <ul className="space-y-3 mb-8">
             {suite.features.map((feature, index) => (
               <li key={index} className="flex items-center gap-3">
                 <CheckCircle2 className="w-5 h-5 text-gold-primary flex-shrink-0" />
-                <span className="text-sm text-black-dark">{feature}</span>
+                <span className="text-sm text-dark-bg font-medium">{feature}</span>
               </li>
             ))}
           </ul>
 
           {/* CTA Button */}
-          <button className="w-full py-3 bg-gold-primary text-black-dark font-bold rounded-lg hover:bg-gold-light transition-all duration-300 group-hover:shadow-lg">
+          <button className="luxury-button w-full py-3 rounded-lg transition-all duration-300 group-hover:shadow-lg">
             {suite.cta}
           </button>
         </div>

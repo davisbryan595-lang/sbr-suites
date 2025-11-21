@@ -68,7 +68,7 @@ export default function SuitesSection() {
           <p className="text-ivory-text/70 text-lg mb-6">
             All suites include professional setup, client amenities, and brand marketing support
           </p>
-          <button className="px-8 py-3 bg-gold-primary text-black-dark font-bold rounded-full hover:bg-gold-light hover:shadow-2xl hover:shadow-gold-primary/50 transition-all duration-300 transform hover:scale-105">
+          <button className="luxury-button px-8 py-3 rounded-full transform hover:scale-105 transition-transform duration-300">
             Explore More Details
           </button>
         </div>
