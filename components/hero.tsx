@@ -17,29 +17,29 @@ export default function Hero() {
 
       {/* Content aligned to the left with frosted glass container */}
       <div className="relative z-10 text-left px-4 sm:px-6 lg:px-12 max-w-2xl">
-        <div className="backdrop-blur-md bg-white/15 border border-white/30 rounded-3xl p-8 sm:p-12 shadow-2xl">
+        <div className="backdrop-blur-md bg-white/15 border border-white/30 rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12 shadow-2xl">
           {/* Main Heading */}
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight drop-shadow-lg">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 tracking-tight drop-shadow-lg">
             SBR STUDIO SUITES
           </h1>
 
           {/* Subheading */}
-          <p className="text-lg sm:text-xl text-white/95 mb-8 font-light drop-shadow-md">
+          <p className="text-base sm:text-lg md:text-xl text-white/95 mb-6 sm:mb-8 font-light drop-shadow-md">
             By Ronda Wallace – Premium Studio Suites for Beauty Professionals
           </p>
 
-          <div className="mb-12 space-y-3">
-            <p className="text-sm sm:text-base text-white font-semibold tracking-widest animate-pulse drop-shadow-md">
+          <div className="mb-8 sm:mb-12 space-y-2 sm:space-y-3">
+            <p className="text-xs sm:text-sm md:text-base text-white font-semibold tracking-widest animate-pulse drop-shadow-md">
               ✦ Several Suites Ready Now
             </p>
             <p
-              className="text-sm sm:text-base text-white font-semibold tracking-widest animate-pulse drop-shadow-md"
+              className="text-xs sm:text-sm md:text-base text-white font-semibold tracking-widest animate-pulse drop-shadow-md"
               style={{ animationDelay: "0.5s" }}
             >
               ✦ Brand & Marketing Help Included
             </p>
             <p
-              className="text-sm sm:text-base text-white font-semibold tracking-widest animate-pulse drop-shadow-md"
+              className="text-xs sm:text-sm md:text-base text-white font-semibold tracking-widest animate-pulse drop-shadow-md"
               style={{ animationDelay: "1s" }}
             >
               ✦ Elevate Your Beauty Business Today
@@ -47,13 +47,13 @@ export default function Hero() {
           </div>
 
           {/* Dual CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
             <button
               onClick={() => {
                 const element = document.getElementById("suites")
                 element?.scrollIntoView({ behavior: "smooth" })
               }}
-              className="luxury-button px-8 py-4 rounded-full text-sm sm:text-base transform hover:scale-105 transition-transform duration-300"
+              className="luxury-button px-6 sm:px-8 py-3 sm:py-4 rounded-full text-xs sm:text-sm md:text-base font-semibold transform hover:scale-105 transition-transform duration-300 min-h-11 sm:min-h-12"
             >
               View Available Suites
             </button>
@@ -62,7 +62,7 @@ export default function Hero() {
                 const element = document.getElementById("inquire")
                 element?.scrollIntoView({ behavior: "smooth" })
               }}
-              className="luxury-button-secondary px-8 py-4 rounded-full text-sm sm:text-base transform hover:scale-105 transition-transform duration-300"
+              className="luxury-button-secondary px-6 sm:px-8 py-3 sm:py-4 rounded-full text-xs sm:text-sm md:text-base font-semibold transform hover:scale-105 transition-transform duration-300 min-h-11 sm:min-h-12"
             >
               Inquire Today
             </button>
