@@ -66,13 +66,7 @@ export default function PricingCard({ plan }: PricingCardProps) {
           </ul>
 
           {/* CTA Button */}
-          <button
-            className={`w-full py-3 font-bold rounded-lg transition-all duration-300 group-hover:shadow-lg ${
-              plan.popular
-                ? "bg-gold-primary text-black-dark hover:bg-gold-light"
-                : "bg-gold-primary text-black-dark hover:bg-gold-light"
-            }`}
-          >
+          <button className="luxury-button w-full py-3 rounded-lg transition-all duration-300 group-hover:shadow-lg">
             Inquire Availability
           </button>
         </div>
