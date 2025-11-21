@@ -18,7 +18,7 @@ export default function SuiteCard({ suite }: SuiteCardProps) {
   return (
     <div className="group">
       {/* Card Container */}
-      <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-gold-primary/30 hover:border-gold-primary">
+      <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-gold-primary/30 hover:border-gold-primary">
         {/* Image */}
         <div className="relative h-56 overflow-hidden bg-gradient-to-br from-cream-light to-cream-bg">
           <img
@@ -32,19 +32,19 @@ export default function SuiteCard({ suite }: SuiteCardProps) {
         </div>
 
         {/* Content */}
-        <div className="p-8 bg-gradient-to-br from-white to-cream-light">
+        <div className="p-8 bg-gradient-to-b from-black/75 to-black/75 rounded-b-lg">
           {/* Title */}
-          <h3 className="text-2xl font-bold text-dark-bg mb-2">{suite.title}</h3>
+          <h3 className="text-2xl font-bold text-white mb-2">{suite.title}</h3>
 
           {/* Description */}
-          <p className="text-dark-bg/85 text-sm mb-6 font-medium">{suite.description}</p>
+          <p className="text-white/80 text-sm mb-6 font-medium">{suite.description}</p>
 
           {/* Features */}
           <ul className="space-y-3 mb-8">
             {suite.features.map((feature, index) => (
               <li key={index} className="flex items-center gap-3">
                 <CheckCircle2 className="w-5 h-5 text-gold-primary flex-shrink-0" />
-                <span className="text-sm text-dark-bg font-medium">{feature}</span>
+                <span className="text-sm text-white font-medium">{feature}</span>
               </li>
             ))}
           </ul>
