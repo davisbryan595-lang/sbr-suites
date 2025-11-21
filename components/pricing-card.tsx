@@ -70,7 +70,7 @@ export default function PricingCard({ plan }: PricingCardProps) {
             className={`w-full py-3 font-bold rounded-lg transition-all duration-300 group-hover:shadow-lg ${
               plan.popular
                 ? "bg-gold-primary text-black-dark hover:bg-gold-light"
-                : "bg-gold-primary/20 text-black-dark hover:bg-gold-primary"
+                : "bg-gold-primary text-black-dark hover:bg-gold-light"
             }`}
           >
             Inquire Availability
