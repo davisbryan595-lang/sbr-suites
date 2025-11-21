@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Satoshi:wght@400;500;600;700&display=swap");
 
 @custom-variant dark (&:is(.dark *));
 
@@ -217,8 +218,6 @@
     animation: hand-hold 3s ease-in-out infinite;
   }
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Satoshi:wght@400;500;600;700&display=swap");
 
 h1,
 h2,
