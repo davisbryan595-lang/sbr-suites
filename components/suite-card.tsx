@@ -50,7 +50,7 @@ export default function SuiteCard({ suite }: SuiteCardProps) {
           </ul>
 
           {/* CTA Button */}
-          <button className="w-full py-3 bg-gold-primary text-black-dark font-bold rounded-lg hover:bg-gold-light transition-all duration-300 group-hover:shadow-lg">
+          <button className="luxury-button w-full py-3 rounded-lg transition-all duration-300 group-hover:shadow-lg">
             {suite.cta}
           </button>
         </div>
