@@ -4,32 +4,26 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative w-full min-h-screen bg-gradient-to-b from-dark-bg via-dark-bg to-dark-accent flex items-center justify-center overflow-hidden pt-20"
+      className="relative w-full min-h-screen bg-cover bg-center flex items-center justify-start overflow-hidden pt-20"
+      style={{
+        backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F98a3bf12d3fd43d6afbc24b607fa1ca0%2Fc811e92df13c4915b254e12195168b82?format=webp&width=1920)",
+      }}
     >
-      <div className="absolute inset-0 opacity-20">
-        <div
-          className="w-full h-full bg-cover bg-center"
-          style={{
-            backgroundImage: "url(/placeholder.svg?height=1080&width=1920&query=luxury-dark-studio-suite-interior)",
-          }}
-        ></div>
-      </div>
-
-      <div className="absolute inset-0 bg-gradient-to-b from-dark-bg/60 via-dark-bg/70 to-dark-accent/80"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-dark-bg/80 via-dark-bg/70 to-transparent"></div>
 
       {/* Floating gold accents */}
-      <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-gold-primary/5 blur-3xl"></div>
-      <div className="absolute bottom-20 right-10 w-40 h-40 rounded-full bg-gold-primary/5 blur-3xl"></div>
+      <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-gold-primary/10 blur-3xl"></div>
+      <div className="absolute bottom-20 right-10 w-40 h-40 rounded-full bg-gold-primary/10 blur-3xl"></div>
 
-      {/* Content */}
-      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+      {/* Content aligned to the left */}
+      <div className="relative z-10 text-left px-4 sm:px-6 lg:px-12 max-w-2xl">
         {/* Main Heading */}
-        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-ivory-text mb-6 tracking-tight text-balance">
+        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-ivory-text mb-6 tracking-tight">
           SBR STUDIO SUITES
         </h1>
 
         {/* Subheading */}
-        <p className="text-lg sm:text-xl text-ivory-text/70 mb-8 font-light">
+        <p className="text-lg sm:text-xl text-ivory-text mb-8 font-light">
           By Ronda Wallace – Premium Studio Suites for Beauty Professionals
         </p>
 
@@ -52,7 +46,7 @@ export default function Hero() {
         </div>
 
         {/* Dual CTAs */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex flex-col sm:flex-row gap-4">
           <button
             onClick={() => {
               const element = document.getElementById("suites")
@@ -71,17 +65,6 @@ export default function Hero() {
           >
             Inquire Today
           </button>
-        </div>
-
-        <div className="mt-16 flex justify-center">
-          <div className="relative w-40 h-40 sm:w-48 sm:h-48 rounded-full overflow-hidden glow-ring">
-            <div className="absolute inset-0 bg-gradient-to-br from-gold-primary/20 to-gold-primary/5"></div>
-            <img
-              src="/images/sbr-hero-removebg-preview.png"
-              alt="SBR Studio Suites Logo"
-              className="w-full h-full object-cover"
-            />
-          </div>
         </div>
       </div>
     </section>
