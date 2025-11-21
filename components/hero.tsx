@@ -52,7 +52,7 @@ export default function Hero() {
               const element = document.getElementById("suites")
               element?.scrollIntoView({ behavior: "smooth" })
             }}
-            className="px-8 py-4 bg-gold-primary text-black-dark font-bold rounded-full hover:bg-gold-light hover:shadow-2xl hover:shadow-gold-primary/50 transition-all duration-300 text-sm sm:text-base transform hover:scale-105"
+            className="luxury-button px-8 py-4 rounded-full text-sm sm:text-base transform hover:scale-105 transition-transform duration-300"
           >
             View Available Suites
           </button>
@@ -61,7 +61,7 @@ export default function Hero() {
               const element = document.getElementById("inquire")
               element?.scrollIntoView({ behavior: "smooth" })
             }}
-            className="px-8 py-4 bg-transparent border-2 border-gold-primary text-gold-primary font-bold rounded-full hover:bg-gold-primary/10 transition-all duration-300 text-sm sm:text-base transform hover:scale-105"
+            className="luxury-button-secondary px-8 py-4 rounded-full text-sm sm:text-base transform hover:scale-105 transition-transform duration-300"
           >
             Inquire Today
           </button>
