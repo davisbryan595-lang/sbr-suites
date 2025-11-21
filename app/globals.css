@@ -192,6 +192,60 @@
     }
   }
 
+  @keyframes rotating-border-glow {
+    0% {
+      border-image: linear-gradient(45deg, #d4af37, #e8d5a8, #d4af37, #c9a237) 1;
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.4), inset 0 0 20px rgba(212, 175, 55, 0.1);
+    }
+    25% {
+      border-image: linear-gradient(135deg, #e8d5a8, #d4af37, #c9a237, #d4af37) 1;
+      box-shadow: 0 0 30px rgba(212, 175, 55, 0.6), inset 0 0 20px rgba(212, 175, 55, 0.15);
+    }
+    50% {
+      border-image: linear-gradient(225deg, #d4af37, #c9a237, #d4af37, #e8d5a8) 1;
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.4), inset 0 0 20px rgba(212, 175, 55, 0.1);
+    }
+    75% {
+      border-image: linear-gradient(315deg, #c9a237, #d4af37, #e8d5a8, #d4af37) 1;
+      box-shadow: 0 0 30px rgba(212, 175, 55, 0.6), inset 0 0 20px rgba(212, 175, 55, 0.15);
+    }
+    100% {
+      border-image: linear-gradient(45deg, #d4af37, #e8d5a8, #d4af37, #c9a237) 1;
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.4), inset 0 0 20px rgba(212, 175, 55, 0.1);
+    }
+  }
+
+  .luxury-button {
+    background: linear-gradient(135deg, #d4af37 0%, #e8d5a8 50%, #c9a237 100%);
+    border: 2px solid transparent;
+    border-image: linear-gradient(45deg, #d4af37, #e8d5a8, #d4af37, #c9a237) 1;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4), inset 0 0 20px rgba(212, 175, 55, 0.1);
+    animation: rotating-border-glow 4s linear infinite;
+    color: #000000;
+    font-weight: bold;
+  }
+
+  .luxury-button:hover {
+    background: linear-gradient(135deg, #e8d5a8 0%, #d4af37 50%, #f0ede6 100%);
+    box-shadow: 0 0 40px rgba(212, 175, 55, 0.8), inset 0 0 20px rgba(212, 175, 55, 0.2);
+  }
+
+  .luxury-button-secondary {
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: linear-gradient(45deg, #d4af37, #e8d5a8, #d4af37, #c9a237) 1;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3), inset 0 0 10px rgba(212, 175, 55, 0.05);
+    animation: rotating-border-glow 4s linear infinite;
+    color: #d4af37;
+    font-weight: bold;
+  }
+
+  .luxury-button-secondary:hover {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(232, 213, 168, 0.1) 100%);
+    box-shadow: 0 0 40px rgba(212, 175, 55, 0.6), inset 0 0 10px rgba(212, 175, 55, 0.1);
+    color: #f0ede6;
+  }
+
   .gold-ring {
     border: 2px solid #d4af37;
     box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
