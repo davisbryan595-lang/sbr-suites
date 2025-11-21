@@ -26,16 +26,16 @@ export default function GallerySection() {
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <span className="text-sm font-semibold text-gold-primary tracking-widest">GALLERY</span>
-          <h2 className="text-4xl sm:text-5xl font-bold text-ivory-text mb-4 mt-2">See Our Suites in Action</h2>
-          <p className="text-lg text-ivory-text/70 max-w-2xl mx-auto">
+        <div className="text-center mb-12 sm:mb-16">
+          <span className="text-xs sm:text-sm font-semibold text-gold-primary tracking-widest">GALLERY</span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-ivory-text mb-3 sm:mb-4 mt-2">See Our Suites in Action</h2>
+          <p className="text-base sm:text-lg text-ivory-text/70 max-w-2xl mx-auto">
             Explore the luxury spaces available for beauty professionals in Mesquite & DFW
           </p>
         </div>
 
         {/* Masonry Gallery */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6">
           {galleryItems.map((item) => (
             <div key={item.id} onClick={() => setSelectedItem(item)} className="cursor-pointer group">
               <GalleryItem item={item} />

@@ -45,20 +45,20 @@ export default function PricingSection() {
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <DollarSign className="w-5 h-5 text-gold-primary" />
-            <span className="text-sm font-semibold text-gold-primary tracking-widest">PRICING PLANS</span>
-            <DollarSign className="w-5 h-5 text-gold-primary" />
+        <div className="text-center mb-12 sm:mb-16">
+          <div className="flex items-center justify-center gap-2 mb-3 sm:mb-4">
+            <DollarSign className="w-4 sm:w-5 h-4 sm:h-5 text-gold-primary" />
+            <span className="text-xs sm:text-sm font-semibold text-gold-primary tracking-widest">PRICING PLANS</span>
+            <DollarSign className="w-4 sm:w-5 h-4 sm:h-5 text-gold-primary" />
           </div>
-          <h2 className="text-4xl sm:text-5xl font-bold text-ivory-text mb-4">Investment That Elevates</h2>
-          <p className="text-lg text-ivory-text/70 max-w-2xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-ivory-text mb-3 sm:mb-4">Investment That Elevates</h2>
+          <p className="text-base sm:text-lg text-ivory-text/70 max-w-2xl mx-auto">
             Flexible pricing options to suit your business needs. Several suites open with custom support.
           </p>
         </div>
 
         {/* Pricing Grid */}
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6 md:gap-8 mb-12">
           {pricingPlans.map((plan) => (
             <PricingCard key={plan.id} plan={plan} />
           ))}
