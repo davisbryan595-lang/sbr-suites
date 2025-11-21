@@ -17,7 +17,7 @@ export default function PricingCard({ plan }: PricingCardProps) {
   return (
     <div className="group">
       <div
-        className={`relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full border-2 ${
+        className={`relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full border-2 ${
           plan.popular
             ? "border-gold-primary scale-105 lg:scale-100 lg:hover:scale-105"
             : "border-gold-primary/30 hover:border-gold-primary"
@@ -40,27 +40,27 @@ export default function PricingCard({ plan }: PricingCardProps) {
         </div>
 
         {/* Content */}
-        <div className={`p-8 ${plan.popular ? "bg-gradient-to-br from-white to-gold-primary/10" : "bg-white"}`}>
+        <div className={`p-8 bg-gradient-to-b from-black/80 to-black/80 rounded-b-lg`}>
           {/* Price */}
           <div className="mb-6">
             <div className="flex items-baseline gap-2">
-              <span className="text-4xl font-bold text-dark-bg">${plan.price}</span>
-              <span className="text-dark-bg/70 text-sm font-semibold">{plan.period}</span>
+              <span className="text-4xl font-bold text-white">${plan.price}</span>
+              <span className="text-white/70 text-sm font-semibold">{plan.period}</span>
             </div>
           </div>
 
           {/* Title */}
-          <h3 className="text-2xl font-bold text-dark-bg mb-2">{plan.title}</h3>
+          <h3 className="text-2xl font-bold text-white mb-2">{plan.title}</h3>
 
           {/* Description */}
-          <p className="text-dark-bg/80 text-sm mb-6 font-medium">{plan.description}</p>
+          <p className="text-white/80 text-sm mb-6 font-medium">{plan.description}</p>
 
           {/* Features */}
           <ul className="space-y-3 mb-8">
             {plan.features.map((feature, index) => (
               <li key={index} className="flex items-start gap-3">
                 <span className="text-gold-primary font-bold mt-1">✦</span>
-                <span className="text-sm text-dark-bg font-medium">{feature}</span>
+                <span className="text-sm text-white font-medium">{feature}</span>
               </li>
             ))}
           </ul>
