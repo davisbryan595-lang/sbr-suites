@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative w-full min-h-screen bg-cover bg-center flex items-center justify-start overflow-hidden pt-20"
+      className="relative w-full min-h-screen bg-contain lg:bg-cover bg-center flex items-center justify-start overflow-hidden pt-20"
       style={{
         backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F98a3bf12d3fd43d6afbc24b607fa1ca0%2Fc811e92df13c4915b254e12195168b82?format=webp&width=1920)",
       }}
